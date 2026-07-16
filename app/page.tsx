@@ -1,33 +1,53 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0B0B0B] text-white flex flex-col justify-center items-center px-6">
+    <main
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        background: "#0B0B0B",
+        color: "white",
+        flexDirection: "column",
+        padding: "24px",
+      }}
+    >
+      <h1
+        style={{
+          fontSize: "48px",
+          fontWeight: "bold",
+          marginBottom: "16px",
+        }}
+      >
+        LinFei
+      </h1>
 
-      <div className="max-w-md text-center">
+      <p
+        style={{
+          color: "#A0A0A0",
+          marginBottom: "32px",
+          textAlign: "center",
+          maxWidth: "400px",
+        }}
+      >
+        Fast. Beautiful. Decentralized.
+        <br />
+        Built on Hyperliquid.
+      </p>
 
-        <h1 className="text-5xl font-bold mb-4">
-          LinFei
-        </h1>
-
-        <p className="text-gray-400 text-lg mb-8">
-          Fast. Beautiful. Decentralized Perpetual Exchange built on Hyperliquid.
-        </p>
-
-        <button
-          className="
-          w-full
-          bg-[#5B8CFF]
-          py-4
-          rounded-xl
-          font-semibold
-          text-lg
-          hover:opacity-90
-          transition"
-        >
-          Launch App
-        </button>
-
-      </div>
-
+      <button
+        style={{
+          background: "#5B8CFF",
+          color: "white",
+          border: "none",
+          padding: "14px 32px",
+          borderRadius: "12px",
+          fontWeight: "bold",
+          cursor: "pointer",
+        }}
+      >
+        Launch App
+      </button>
     </main>
   );
 }
