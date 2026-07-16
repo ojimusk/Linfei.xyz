@@ -1,9 +1,10 @@
 import Header from "@/components/layout/Header";
+import BottomNav from "@/components/layout/BottomNav";
 import Card from "@/components/ui/Card";
 
 export default function Dashboard() {
   return (
-    <main className="min-h-screen bg-[#0B0E11] text-white">
+    <main className="min-h-screen bg-[#0B0E11] pb-24 text-white">
       <Header />
 
       <div className="space-y-5 p-5">
@@ -38,6 +39,8 @@ export default function Dashboard() {
         </Card>
 
       </div>
+
+      <BottomNav />
     </main>
   );
 }
